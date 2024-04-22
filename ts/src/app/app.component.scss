@@ -32,15 +32,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        font-family: "Quicksand", sans-serif;
         height: 33px;
         border-bottom: 2px solid #E7E7E7;
 
         a{
             color: #725C5C;
+            font-size: 15px;
+            font-weight: 500;
             text-decoration: none;
             padding-left: 24px;
         }
+        
     }
 
     .active-orange{
@@ -135,7 +138,7 @@ header{
                 right: 47px;
             }
         }
-    }
+    }   
 }
 
 .content{
