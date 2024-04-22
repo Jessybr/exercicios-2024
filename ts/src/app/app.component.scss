@@ -136,6 +136,215 @@ header{
             }
         }
     }
+}
 
+.content{
+    margin: 15px 50px 10px 260px;
+
+    .cont-titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+
+        h2{
+            color: #ED7839;
+            font-size: 20px;
+            width: 786px;
+        }
+
+        .cont-share{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-between;
+            width: 239px;
+            height: 60px;
+            margin-top: 5px;
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+                .icon-download{
+                    background-color: #ED7839;
+                    color: white;
+                    width: 120px;
+                    border-radius: 4px;
+                    padding: 6px 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span{
+                        margin-left: 6px;
+                    }
+                }
+                .icon-star{
+                    @extend .icon-doi
+                }
+                .icon-doi{
+                    background-color: #ED7839;
+                    width: 43px;
+                    height: 31;
+                    border-radius: 4px;
+                    padding: 6px 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        width: 19px;
+                        height: auto;
+                    }
+                }
+                svg{
+                    width: 20px;
+                }
+            }
+
+            .citar{
+                font-size: 14px;
+                color: #ED7839;
+                font-weight: 500;
+                text-align: end;
+            }
+        }
+    }
     
+    .cont-video{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .video{
+            position: relative;
+            iframe{
+                border-radius: 2px;
+            }
+
+            
+            .poster{
+                position: absolute;
+                top: 0;
+                width: 783px;
+                height: 439px;
+                padding: 30px 25px 50px 25px;
+                background-color: #8D350680;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &:hover{
+                    display: none !important;
+                }
+    
+
+                h2{
+                    font-size: 24px;
+                }
+
+                .autor{
+                    img{
+                        float: left;
+                        outline: 1px solid #ED7839;
+                        border-radius: 50%;
+                        padding: 3px;
+                        margin-right: 15px;
+                    }
+                    h1{
+                        font-size: 34px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+        
+        
+        .cont-details{
+            width: 242px;
+            height: 439px;
+            border: 2px solid #ECECEC;
+            border-radius: 3px;
+            overflow: hidden;
+
+            .title-det{
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                height: 45px;
+                background-color: #FDF1EB;
+                color: #4E4E4E;
+                border-bottom: 2px solid #ECECEC;
+            }
+
+            .text-det{
+                font-family: "Quicksand", sans-serif;
+                padding: 15px;
+                color: #5C5C5C;
+                font-size: 12px;
+                font-weight: 400;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #574f4f;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #e7e7e7;
+                    border-radius: 0.5rem;
+                    margin: 3.6px;
+                }
+
+                .info{
+                    p{
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .autores{
+                    line-height: 16.8px;
+
+                    span{
+                        font-weight: 700;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        letter-spacing: 1px;
+
+                        sup{
+                            font-size: 9px;
+                        }
+                    }
+                }
+                
+                .universidade{
+                    color: #ADA0A0;
+                    font-size: 12px;
+
+                    sup{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
 }
