@@ -23,7 +23,7 @@ html, body{
     .nome-evento{
         background: linear-gradient(to bottom, #FFB354, #EE7A3A);
         height: 68px;
-        color: white;
+        color: var(--seven);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,7 +42,7 @@ html, body{
         justify-content: center;
         font-family: "Quicksand", sans-serif;
         height: 33px;
-        border-bottom: 2px solid #E7E7E7;
+        border-bottom: 2px solid var(--six);
 
         a{
             color: #725C5C;
@@ -55,7 +55,7 @@ html, body{
     }
 
     .active-orange{
-        background-color: #FDF1EB;
+        background-color: var(--three);
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -155,9 +155,9 @@ html, body{
     margin: 15px 50px 10px 260px;
 
     .title-session{
-        background-color: #FDF1EB;
+        background-color: var(--three);
         color: #4E4E4E;
-        border-bottom: 1px solid #ECECEC;
+        border-bottom: 1px solid var(--four);
         height: 45px;
         display: flex;
         align-items: center;
@@ -383,7 +383,7 @@ html, body{
     }
 
     .cont-resumo{
-        border: 1px solid #ECECEC;
+        border: 1px solid var(--four);
         width: 100%;
         margin: 30px 0;
         border-radius: 2px;
@@ -395,7 +395,7 @@ html, body{
             margin: 17px;
 
             .btn-show-more{
-                color: #ED7839;
+                color: var(--one);
                 font-weight: 700;
                 cursor: pointer;
             }
