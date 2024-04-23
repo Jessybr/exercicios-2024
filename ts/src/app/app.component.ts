@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss','./style/app.contDiscussoes.scss','./style/app.contTitulo.scss','./style/app.contVideo.scss','./style/app.contHeader.scss','./style/app.contCard.scss','./style/app.contCreateTopic.scss','./style/app.contNewTopic.scss']
 })
 export class AppComponent {
   title = 'DevChuva';
