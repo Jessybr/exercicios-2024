@@ -246,13 +246,14 @@
                     <span>1 resposta</span>
                 </div>
             </div>
-            <div class="cont-card">
+
+            <div class="cont-card answered-topic" (click)="showAnswers()">
                 <div class="card-header">
-                    <h3>Assunto da pergunta aparece aqui</h3>
+                    <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
                     <p>Carlos Henrique Santos</p>
                 </div>
                 <div class="card-body">
-                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo<span *ngIf="pointComments">...</span><span *ngIf="comments"> resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</span></p>
                 </div>
                 <div class="card-footer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#ED7839" width="4"
@@ -262,7 +263,46 @@
                         heigth="14" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                     </div>
                     <span>1 like</span>
-                    <span>1 resposta</span>
+                    <span>4 resposta</span>
+                </div>
+                <div class="comments-container" *ngIf="comments">
+                    <div class="comment">
+                        <div class="cont-person">
+                            <span class="person">Adriano da Silva</span>
+                            <div>
+                                <span>Autor</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ED7839" width="20"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
+
+                    <div class="comment">
+                        <div class="cont-person">
+                            <span class="person">Carlos Henrique Santos</span>
+                        </div>
+                        <p class="text-answer">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                    </div>
+                    <div class="comment">
+                        <div class="cont-person">
+                            <span class="person">Carmila Ferreira Andrade</span>
+                            <div>
+                                <span>Coautor</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ED7839" width="20"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-answer">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br><br> Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
+                    <div class="comment">
+                        <div class="cont-person">
+                            <span class="person">Ana Carolina</span>
+                            <div>
+                                <span>Coautor</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ED7839" width="20"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
                 </div>
             </div>
         </section>
