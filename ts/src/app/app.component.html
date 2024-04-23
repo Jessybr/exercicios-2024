@@ -168,7 +168,35 @@
                 <div class="line"></div>
                 <div class="cont-buttom" (click)="criarTopico()" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#ffffff" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-                    <span class="btn-create-topic">criar tópico</span>
+                    <button class="btn-create-topic" (click)="criarTopico()" >criar tópico</button>
+                </div>
+            </div>
+
+            <div class="create-topic" *ngIf="createTopic">
+                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                <form *ngIf="form">
+                    <label>
+                        Assunto
+                    </label>
+                    <input type="text" class="subject" placeholder="Defina um tópico sucinto para notificar os autores..." id="assunto">
+                    <label>
+                        Conteúdo
+                    </label>
+                    <div class="cont-conteudo">
+                        <textarea id="conteudo" name=""></textarea>
+                        <button (click)="enviarForm()">Enviar</button>
+                    </div>
+                </form>
+                <div class="line"></div>
+            </div>
+
+            <div class="new-topic-created" *ngIf="newTopicCreated">
+                <h3>Seu tópico foi enviado com sucesso! :D</h3>
+                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                <a href="#">Descubra outros trabalhos!</a>
+                <div class="line"></div>
+                <div class="cont-buttom">
+                    <button>criar novo tópico</button>
                 </div>
             </div>
 
