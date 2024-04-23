@@ -13,8 +13,12 @@ html, body{
 .side-menu{
     width: 220px;
     position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     height: 100%;
     box-shadow: 2px 1px 5px #8989895c;
+    z-index: 9;
 
     .nome-evento{
         background: linear-gradient(to bottom, #FFB354, #EE7A3A);
@@ -256,17 +260,11 @@ html, body{
                 top: 0;
                 width: 784px;
                 height: 439px;
-                padding: 30px 25px 50px 25px;
                 background-color: #8D350680;
                 color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-
-                &:hover{
-                    display: none !important;
-                }
-    
 
                 h2{
                     font-size: 24px;
@@ -387,19 +385,7 @@ html, body{
         border-radius: 2px;
 
         .resumo-titulo{
-            background-color: #FDF1EB;
-            color: #4E4E4E;
-            border-bottom: 1px solid #ECECEC;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-
-            h1{
-                font-weight: 500;
-                font-size: 20px;
-                margin: 17px;
-            }
+            @extend .title-session;
         }
         .texto-resumo{
             margin: 17px;
