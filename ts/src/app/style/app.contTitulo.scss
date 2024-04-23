@@ -1,0 +1,74 @@
+.cont-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    h2{
+        color: var(--one);
+        font-size: 20px;
+        width: 786px;
+    }
+
+    .cont-share{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 239px;
+        height: 60px;
+        margin-top: 5px;
+
+        .icons{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            .icon-download{
+                background-color: var(--one);
+                color: var(--seven);
+                width: 120px;
+                border-radius: 4px;
+                padding: 6px 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                span{
+                    margin-left: 6px;
+                }
+            }
+            .icon-star{
+                @extend .icon-doi;
+                cursor: pointer;
+            }
+            .icon-doi{
+                background-color: var(--one);
+                width: 43px;
+                height: 31;
+                border-radius: 4px;
+                padding: 6px 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                
+                img{
+                    width: 19px;
+                    height: auto;
+                }
+            }
+            svg{
+                width: 20px;
+            }
+        }
+
+        .citar{
+            font-size: 14px;
+            color: var(--one);
+            font-weight: 500;
+            text-align: end;
+        }
+    }
+}

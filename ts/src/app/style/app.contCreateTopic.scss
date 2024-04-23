@@ -1,0 +1,87 @@
+.create-topic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+
+    p{
+        width: 100%;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--five);
+        text-align: center;
+    }
+
+    .line{
+        width: 100%;
+        border-bottom: 1px solid var(--six);
+        margin: 10px 0 0 0;
+        height: 20px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+
+        label{
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--one);
+            margin-bottom: 5px;
+        }
+
+        #assunto{
+            width: 100%;
+            height: 39px;
+            border: 1px solid var(--two);
+            border-radius: 3px;
+
+            &::placeholder{
+                padding-left: 10px;
+            }
+        }
+
+        .cont-conteudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 113px;
+            background-color: #EAF1F2;
+            border: 1px solid var(--two);
+            border-radius: 3px;
+
+            #conteudo{
+                width: 100%;
+                height: 82px;
+                background-color: var(--seven);
+                border-bottom: 1px solid var(--two);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-radius: 3px 3px 0 0;
+            }
+
+            button{
+                width: 205px;
+                height: 31px;
+                color: var(--seven);
+                background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+                font-family: "Quicksand", sans-serif;
+                font-weight: 700;
+                font-size: 15px;
+                border: none;
+                border-radius: 0 0 3px 0;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
