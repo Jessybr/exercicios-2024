@@ -350,4 +350,40 @@ header{
             }
         }
     }
+
+    .cont-resumo{
+        border: 1px solid #ECECEC;
+        width: 100%;
+        margin: 30px 0;
+        border-radius: 2px;
+
+        .resumo-titulo{
+            background-color: #FDF1EB;
+            color: #4E4E4E;
+            border-bottom: 1px solid #ECECEC;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            h1{
+                font-weight: 500;
+                font-size: 20px;
+                margin: 17px;
+            }
+        }
+        .texto-resumo{
+            margin: 17px;
+
+            .btn-show-more{
+                color: #ED7839;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .btn-show-less{
+                @extend .btn-show-more;
+            }
+        }
+    }
 }
