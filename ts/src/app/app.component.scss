@@ -223,15 +223,17 @@ header{
 
         .video{
             position: relative;
-            iframe{
+            img{
                 border-radius: 2px;
+                width: 784px;
+                height: 439px;
             }
 
             
             .poster{
                 position: absolute;
                 top: 0;
-                width: 783px;
+                width: 784px;
                 height: 439px;
                 padding: 30px 25px 50px 25px;
                 background-color: #8D350680;
@@ -247,10 +249,16 @@ header{
 
                 h2{
                     font-size: 24px;
+                    margin: 30px;
+                    width: 734px;
                 }
 
                 .autor{
-                    img{
+                    margin: 50px 30px;
+
+                    #video-perfil{
+                        width: 84px;
+                        height: auto;
                         float: left;
                         outline: 1px solid #ED7839;
                         border-radius: 50%;
