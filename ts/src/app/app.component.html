@@ -126,36 +126,8 @@
             </div>
         </section>
 
+        <div class="title-discussoes"><h1>Discussões</h1></div>
         <section class="cont-discussoes">
-            <div class="title-discussoes"><h1>Discussões</h1></div>
-
-            <div class="new-topic-created" *ngIf="newTopicCreated">
-                <h3>Seu tópico foi enviado com sucesso! :D</h3>
-                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                <a href="#">Descubra outros trabalhos!</a>
-                <div class="line"></div>
-                <div class="cont-buttom">
-                    <span class="btn-create-topic">criar novo tópico</span>
-                </div>
-            </div>
-
-            <div class="create-topic" *ngIf="createTopic">
-                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                <table>
-                    <label for="">
-                        Assunto
-                    </label>
-                    <input type="text" placeholder="Defina um tópico sucinto para notificar os autores..." id="assunto">
-                    <label for="">
-                        Conteúdo
-                    </label>
-                    <div class="cont-conteudo">
-                        <textarea id="conteudo" name=""></textarea>
-                        <input type="submit" value="Enviar" (click)="enviarForm()">
-                    </div>
-                </table>
-                <div class="line"></div>
-            </div>
 
             <div class="new-topic" *ngIf="newTopic">
                 <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
@@ -166,7 +138,7 @@
                 </div>
                 <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 <div class="line"></div>
-                <div class="cont-buttom" (click)="criarTopico()" >
+                <div class="cont-buttom">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#ffffff" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
                     <button class="btn-create-topic" (click)="criarTopico()" >criar tópico</button>
                 </div>
@@ -204,7 +176,7 @@
                 <div class="feedback">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#707070" width="20"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"/></svg>
                     <h3>Aguardando feedback dos autores</h3>
-                    <span>Editar tópico</span>
+                    <a href="">Editar tópico</a>
                 </div>
                 <div class="newCard">
                     <div class="card-header">
