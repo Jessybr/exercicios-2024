@@ -13,16 +13,18 @@ export class AppComponent {
   point: boolean = true;
   btnShowLess: boolean = false;
   createTopic: boolean = false;
+  form: boolean = false;
   newTopic: boolean = true;
   cardNew: boolean = false;
   newTopicCreated: boolean = false;
+  comments: boolean = false;
+  pointComments: boolean = true;
 
   showMore(): void {
     this.showText = true;
     this.btnShow = false;
     this.point = false;
     this.btnShowLess = true;
-
   }
 
   showLess(): void {
@@ -35,11 +37,17 @@ export class AppComponent {
   criarTopico(): void {
     this.createTopic = true;
     this.newTopic = false;
+    this.form = true;
   }
 
   enviarForm(): void{
     this.cardNew = true;
     this.newTopicCreated = true;
     this.createTopic = false;
+  }
+
+  showAnswers(): void {
+    this.comments = true;
+    this.pointComments = false;
   }
 }
