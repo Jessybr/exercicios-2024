@@ -107,6 +107,7 @@ html, body{
         justify-content: center;
         border-radius: 3px;
         padding: 2px;
+        cursor: pointer;
 
         span{
             padding: 5px;
@@ -204,13 +205,15 @@ html, body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
 
                     span{
                         margin-left: 6px;
                     }
                 }
                 .icon-star{
-                    @extend .icon-doi
+                    @extend .icon-doi;
+                    cursor: pointer;
                 }
                 .icon-doi{
                     background-color: #ED7839;
@@ -221,6 +224,7 @@ html, body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
                     
                     img{
                         width: 19px;
@@ -402,18 +406,20 @@ html, body{
         }
     }
 
+    .title-discussoes{
+        @extend .title-session;
+        align-self: flex-start;
+        width: 100%;
+    }
+
     .cont-discussoes{
-        @extend .cont-resumo;
+        border: 1px solid #ECECEC;
+        border-radius: 2px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .title-discussoes{
-            @extend .title-session;
-            align-self: flex-start;
-            width: 100%;
-        }
+        padding: 10px 20px;
 
         .new-topic-created{
             @extend .new-topic;
@@ -467,7 +473,6 @@ html, body{
                 position: relative;
                 top: -16px;
                 background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
-                color: white;
                 width: 133px;
                 height: 32px;
                 box-shadow: 0px 2px 2px 0px #0000003D;
@@ -477,11 +482,15 @@ html, body{
                 border-radius: 5px;
                 cursor: pointer;
 
-                span{
+                button{
                     font-weight: 700;
                     font-size: 15px;
                     text-align: center;
                     padding: 0 2px 3px 2px;
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
                 }
             }
         }
@@ -510,7 +519,7 @@ html, body{
                 height: 20px;
             }
 
-            table{
+            form{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -529,7 +538,10 @@ html, body{
                     height: 39px;
                     border: 1px solid #CCCCCC;
                     border-radius: 3px;
-                    padding-left: 10px;
+
+                    &::placeholder{
+                        padding-left: 10px;
+                    }
                 }
 
                 .cont-conteudo{
@@ -552,10 +564,9 @@ html, body{
                         border-left: none;
                         border-right: none;
                         border-radius: 3px 3px 0 0;
-                        padding-left: 10px
                     }
 
-                    input[type=submit]{
+                    button{
                         width: 205px;
                         height: 31px;
                         color: white;
@@ -565,6 +576,7 @@ html, body{
                         font-size: 15px;
                         border: none;
                         border-radius: 0 0 3px 0;
+                        cursor: pointer;
                     }
                 }
                 
@@ -600,11 +612,11 @@ html, body{
                     color: #707070;
                 }
 
-                span{
+                a{
                     font-weight: 400;
                     font-size: 14px;
-                    text-decoration: underline;
                     color: #ED7839;
+                    cursor: pointer;
                 }
             }
 
@@ -623,11 +635,12 @@ html, body{
             font-family: "Quicksand", sans-serif;
             padding: 20px;
             margin: 10px;
-            width: 97%;
+            width: 98%;
             border: 1px solid #E7E7E7;
             box-shadow: 0px 0px 8px 0px #0000001F;
             border-radius: 5px;
             gap: 5px;
+            cursor: pointer;
 
             .card-header{
                 display: flex;
